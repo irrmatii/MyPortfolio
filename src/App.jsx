@@ -29,10 +29,6 @@ function App() {
                 trigger: ".gsap_con",
                 start: "top top",
                 end: "+=1500",
-                // trigger: ".gsap_con",
-                // start: "top top",
-                // endTrigger: ".about-section",
-                // end: "bottom top",
                 scrub: 1,
                 pin: true,
                 // markers: true,
@@ -44,8 +40,6 @@ function App() {
                 trigger: ".gsap_con",
                 start: "60% bottom",
                 end: "80% bottom",
-                // start: "80% bottom",
-                // end: "bottom bottom",
                 scrub: 1,
             },
         });
@@ -96,7 +90,7 @@ function App() {
                 end: "99% bottom",
                 scrub: 1,
                 pin: true,
-                markers: true
+                markers: true,
             },
         });
 

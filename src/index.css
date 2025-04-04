@@ -74,7 +74,7 @@ html, body {
 
 .test{
     color: rgba(255, 255, 255, 0.12);
-    background-color: #e3e2a9;
+    background-color: rgba(227, 226, 169, 0.66);
 }
 
 @property --angle {

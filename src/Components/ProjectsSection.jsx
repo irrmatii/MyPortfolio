@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsSection = () => {
 
     return (
-        <div className="w-full h-screen flex projects-section absolute top-0 left-0 opacity-0 pointer-events-none">
+        <div id='Projects' className="w-full h-screen flex projects-section absolute top-0 left-0 opacity-0 pointer-events-none">
             <div className="w-full h-full mr-[10%] ml-[10%] flex flex-col">
                 <div className="w-full h-full flex flex-col pb-10">
                     <div className="w-full flex justify-center pb-10 pt-10 relative">
