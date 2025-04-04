@@ -1,0 +1,7 @@
+ABOUT SECTION
+
+<p className="text-lg pb-2">and never in a million years did I think I'd find myself passionate about writing code. Yet, here I am, fully immersed in the world of frontend development — and absolutely loving every minute of it.</p>
+
+<p className="text-lg pb-2">The coding world is enormous, filled with endless possibilities and a wealth of knowledge to explore. And that’s exactly what makes it so exciting! Every day, I challenge myself to learn something new, refine my skills, and grow as a frontend developer.<br/> Whether it’s mastering the latest JavaScript frameworks, improving UI/UX design, or solving complex problems, I’m always eager to push my limits and create amazing digital experience.</p>
+
+<p className="text-lg pb-2">If you’re looking for a passionate frontend developer to bring your ideas to life, let’s connect and build something great together!</p>
