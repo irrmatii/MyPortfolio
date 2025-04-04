@@ -16,7 +16,7 @@ html, body {
 }
 
 .bg-gradient-5-colors{
-    background:linear-gradient(160deg, #afd9f5 2%, #aaa3c0 20%, #fffec1 50%, #aaa3c0 70%, #afd9f5 100%);
+    background:linear-gradient(160deg, #afd9f5 2%, #aaa3c0 20%, #fffec1 40%, #aaa3c0 60%, #afd9f5 80%, #fffec1 100%);
     background-size: 120% 120%;
     animation: gradient 10s ease-in-out infinite;
     filter: hue-rotate(0deg);
@@ -74,7 +74,7 @@ html, body {
 
 .test{
     color: rgba(255, 255, 255, 0.12);
-    background-color: rgb(245, 238, 235);
+    background-color: #e3e2a9;
 }
 
 @property --angle {
