@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 const HomeSection = () => {
 
     return (
-        <div id="Home" className="w-full h-full relative flex flex-col home_section">
+        <div id="Home" className="w-full h-auto flex flex-col home_section relative">
             <div className="w-full h-screen relative flex items-end">
                 <div className="w-full pb-10 flex items-center gap-2">
                     <div className="w-1/2 flex flex-col items-end title">
@@ -31,7 +31,7 @@ const HomeSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-screen'></div>
+            <div className='w-full h-[80vh]'></div>
             {/*<div className="w-full h-[450px] md:h-[350px] lg:h-[400px] xl:h-[300px]"></div>*/}
 
         </div>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactSection = () => {
     return (
-        <div id="Contact" className='w-full h-screen relative flex flex-col items-center bg-linear-to-b from-transparent to-[#111] to-75%'>
+        <div id="Contact"  className='w-full h-screen absolute bottom-0 flex flex-col items-center bg-linear-to-b from-transparent to-[#111] to-75%'>
             <div className="w-full flex justify-center pb-10 pt-10 relative">
                 <h1 className="text-8xl text-[#e3e2a9] text-shadow font-(family-name:--font-primary)">Contact Me</h1>
                 <h1 className="text-5xl font-bold text-shadow-white tracking-widest absolute bottom-9 z-40 font-(family-name:--font-secondary)">Contact Me</h1>

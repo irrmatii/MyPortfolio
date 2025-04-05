@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillsSection = () => {
     return (
-        <div id="Skills" className="w-full h-screen flex skills-section z-50">
+        <div id="Skills" className="w-full h-screen flex skills-section z-50 absolute top-0">
             <div className="w-full h-full mr-[10%] ml-[10%]">
                 <div className="w-full h-full flex flex-col">
                     <div className="w-full flex justify-center pb-30 pt-10 relative">

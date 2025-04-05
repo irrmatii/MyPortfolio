@@ -9,7 +9,7 @@ const AboutSection = () => {
 
 
     return (
-        <div id="About" className="w-full flex justify-end relative about-section opacity-100">
+        <div id="About" className="w-full flex justify-end relative about-section">
             <div className="w-[70%] flex flex-col items-center bg-[#111] rounded-bl-2xl">
                 <div className="w-full h-screen flex flex-col items-center relative">
                     <div className="relative inline-block pt-20 pl-20">
