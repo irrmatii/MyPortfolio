@@ -33,16 +33,16 @@ function App() {
                 // markers: true,
             },
         });
-        // gsap.to(aboutRef.current, {
-        //     opacity: 0,
-        //     scrollTrigger: {
-        //         trigger: skillsRef.current,
-        //         start: "top top",
-        //         end: "bottom top",
-        //         scrub: 1,
-        //         // markers: true
-        //     },
-        // });
+        gsap.to(aboutRef.current, {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: skillsRef.current,
+                start: "5% center",
+                end: "center center",
+                scrub: 1,
+                // markers: true
+            },
+        });
         //
         // gsap.to(".name", {
         //     color: "white",
@@ -87,17 +87,15 @@ function App() {
             scrollTrigger: {
                 trigger: ".gsap_con",
                 start: "48% top",
-                // endTrigger: contactRef.current,
                 end: "95% bottom",
                 scrub: 1,
                 pin: true,
-
                 // markers: true,
             },
         });
 
-        tl.to(".skills-section", {opacity: 0,}, "start")
-            .to(".projects-section", {opacity: 1, pointerEvents: "auto"}, "start")
+        tl.to(".skills-section", {opacity: 0, zIndex: "40", delay: 0.2}, "start")
+            .to(".projects-section", {opacity: 1, zIndex: "50", delay: 0.2}, "start")
     }, []);
 
     useEffect(() => {
@@ -109,7 +107,7 @@ function App() {
         <>
             <div
                 className="w-full h-auto flex flex-col items-center relative">
-                <Nav/>
+                {/*<Nav/>*/}
                 <div
                     className="w-full h-full flex flex-col items-center bg-gradient-5-colors relative gsap_con overflow-hidden">
                     <div ref={bgRef} className="w-1/2 h-screen absolute top-0 right-0 bg-[#111]"></div>
