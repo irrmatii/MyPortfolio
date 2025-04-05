@@ -22,7 +22,7 @@ const CarouselCard = ({project}) => {
                     {project.frontLink &&
                         <a href={project.frontLink} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
-                                className="w-full font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+                                className="w-full font-medium text-[clamp(13px,1.2vw,40px)] p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{backgroundColor: project.color}}>
                                 Front-end
                                 <svg className="w-[18%] h-auto" xmlns="http://www.w3.org/2000/svg" width="30"
@@ -37,7 +37,7 @@ const CarouselCard = ({project}) => {
                     {project.backLink &&
                         <a href={project.backLink} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
-                                className="text-white w-full font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+                                className="text-white text-[clamp(13px,1.2vw,40px)] w-full font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{border: `2px solid ${project.color}`}}>
                                 Back-end
                                 <svg className="w-[18%] h-auto" xmlns="http://www.w3.org/2000/svg" width="30"
@@ -52,7 +52,7 @@ const CarouselCard = ({project}) => {
                     {project.live &&
                         <a href={project.live} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
-                                className="w-full text-white font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+                                className="w-full text-white text-[clamp(13px,1.2vw,40px)] font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{border: `2px solid ${project.color}`}}>
                                 Live
                                 <svg className="w-[18%] h-auto" xmlns="http://www.w3.org/2000/svg" width="30"
