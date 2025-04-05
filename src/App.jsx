@@ -43,46 +43,45 @@ function App() {
                 // markers: true
             },
         });
-        //
-        // gsap.to(".name", {
-        //     color: "white",
-        //     opacity: 0.9,
-        //     stagger: {
-        //         each: 2,
-        //         from: "end",
-        //     },
-        //     scrollTrigger: {
-        //         trigger: ".about-section",
-        //         start: "120% top",
-        //         end: "140% -60%",
-        //         scrub: 2,
-        //     },
-        // });
-        // gsap.to(".word-am", {
-        //     color: "white",
-        //     opacity: 0.9,
-        //     stagger: {
-        //         each: 1,
-        //         from: "end",
-        //     },
-        //     scrollTrigger: {
-        //         trigger: ".about-section",
-        //         start: "140% top",
-        //         end: "140% -50%",
-        //         scrub: 2,
-        //         // markers: true
-        //     },
-        // });
-        // gsap.to(".title", {
-        //     opacity: 0,
-        //     scrollTrigger: {
-        //         trigger: ".about-section",
-        //         start: "center top",
-        //         end: "130% top",
-        //         scrub: 1,
-        //     },
-        // });
-        //
+
+        gsap.to(".name", {
+            color: "white",
+            opacity: 0.9,
+            stagger: {
+                each: 2,
+                from: "end",
+            },
+            scrollTrigger: {
+                trigger: aboutRef.current,
+                start: "75% center",
+                end: "85% center",
+                scrub: 2,
+            },
+        });
+        gsap.to(".word-am", {
+            color: "white",
+            opacity: 0.9,
+            stagger: {
+                each: 1,
+                from: "end",
+            },
+            scrollTrigger: {
+                trigger: aboutRef.current,
+                start: "75% center",
+                end: "85% center",
+                scrub: 2,
+            },
+        });
+        gsap.to(".title", {
+            opacity: 0,
+            scrollTrigger: {
+                trigger: aboutRef.current,
+                start: "50% center",
+                end: "bottom center",
+                scrub: 1,
+            },
+        });
+
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger: ".gsap_con",
