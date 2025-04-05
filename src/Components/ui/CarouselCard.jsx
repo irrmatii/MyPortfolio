@@ -10,17 +10,17 @@ const CarouselCard = ({project}) => {
         <div className={`w-full h-full bg-black rounded-xl flex box-shadow
             before:absolute before:top-0 before:w-full before:h-full before:bg-black  before:blur-[7px] before:rounded-xl before:shadow-2xl`}
         >
-            <div className="w-[60%] h-full flex flex-col items-center p-4 z-20">
+            <div className="w-[60%] h-full flex flex-col items-center px-4 py-3 z-20">
                 <h1 className="text-xl text-shadow-white font-bold pb-4"
                     style={{ color: project.color }}
                 >{project.title}</h1>
                 <div className="w-full h-full text-center">
-                    <p className="text-[rgb(245,238,235)] font-(family-name:--font-secondary)">{project.description}</p>
+                    <p className=" text-sm text-[rgb(245,238,235)] font-(family-name:--font-secondary)">{project.description}</p>
                 </div>
 
-                <div className="w-full flex gap-3">
+                <div className="w-full flex items-center gap-3">
                     {project.frontLink &&
-                        <a href={project.frontLink} target="_blank" rel="noopener noreferrer" className='w-[30%]'>
+                        <a href={project.frontLink} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
                                 className="w-full font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{backgroundColor: project.color}}>
@@ -35,7 +35,7 @@ const CarouselCard = ({project}) => {
                         </a>
                     }
                     {project.backLink &&
-                        <a href={project.backLink} target="_blank" rel="noopener noreferrer" className='w-[30%]'>
+                        <a href={project.backLink} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
                                 className="text-white w-full font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{border: `2px solid ${project.color}`}}>
@@ -50,7 +50,7 @@ const CarouselCard = ({project}) => {
                         </a>
                     }
                     {project.live &&
-                        <a href={project.live} target="_blank" rel="noopener noreferrer" className='w-[30%]'>
+                        <a href={project.live} target="_blank" rel="noopener noreferrer" className='w-[35%]'>
                             <div
                                 className="w-full text-white font-medium p-1 flex items-center justify-center gap-2 rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
                                 style={{border: `2px solid ${project.color}`}}>
