@@ -12,7 +12,7 @@ const AboutSection = () => {
                         <h1 className="text-[clamp(60px,calc(8vw+1rem),250px)] text-[#afd9f5] text-shadow-white font-(family-name:--font-primary) uppercase">Hello,</h1>
                     </div>
                     <div
-                        className="w-[85%] h-full pb-[8%] flex items-end">
+                        className="w-[85%] h-full pb-20 sm:pb-[8%] flex items-end">
                         <p className="text-[clamp(20px,calc(1.1vw+1rem),100px)] text-[#afd9f5] text-center font-(family-name:--font-fourth) uppercase">Frontend
                             development is my playground - where
                             creativity meets logic,

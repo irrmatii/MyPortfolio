@@ -76,8 +76,6 @@ function App() {
                     scrub: 2,
                 },
             });
-
-
         } else {
             gsap.to(".name", {
                 color: "white",
@@ -108,8 +106,6 @@ function App() {
                 },
             });
         };
-
-
 
         gsap.to(".title", {
             opacity: 0,
