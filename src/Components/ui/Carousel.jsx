@@ -8,6 +8,9 @@ import Hamburger_sm from '/src/assets/Hamburger_Website_sm.jpg'
 import ShootingGame from '/src/assets/Shooting_Game.jpg'
 import ShootinGame_sm from '/src/assets/Shooting_Game_sm.jpg'
 import Monopoly from '/src/assets/Monopoly_Game.jpg'
+import AuroraTours from '/src/assets/Aurora_website.jpg'
+import AuroraTours_sm from '/src/assets/Aurora_website_sm.jpg'
+
 
 const Carousel = () => {
 
@@ -83,13 +86,13 @@ const Carousel = () => {
             color: 'rgb(236,222,188)'
         },
         {
-            title: '',
-            description: '',
-            image: '',
-            imageSm: "",
-            frontLink: '',
+            title: 'Aurora Tours',
+            description: 'Aurora Tours is one of the first websites I created as I began my web development journey. Built with a simple index.html and style.css, this project showcases a travel-themed design. The homepage features an image slider for an engaging visual experience, while other sections include a contact form and a Q&A section enhanced with an accordion (harmonica) effect for interactive content display. This project helped me explore the basics of HTML, CSS, and user-friendly layout design.',
+            image: AuroraTours,
+            imageSm: AuroraTours_sm,
+            frontLink: 'https://github.com/irrmatii/Website-Aurora-Tours.git',
             backLink: '',
-            live: '',
+            live: 'https://irrmatii.github.io/Website-Aurora-Tours/',
             color: 'rgb(227,172,133,0.9)'
         },
         {
