@@ -4,10 +4,6 @@ import profileImg from '../assets/Adobe Express - file.png'
 
 const AboutSection = () => {
 
-    const letters = "Let’s build something extraordinary! Let’s build something extraordinary! Let’s build something extraordinary! Let’s build something extraordinary!";
-    console.log(letters.length)
-
-
     return (
         <div id="About" className="w-full flex justify-end relative about-section">
             <div className=" w-full md:w-[72%] flex flex-col items-center bg-[#111] rounded-bl-2xl">
@@ -66,7 +62,6 @@ const AboutSection = () => {
 
                     </div>
                 </div>
-
             </div>
         </div>
     );

@@ -2,7 +2,6 @@ import React from 'react';
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
-import profileImg from "../assets/profile-img.png";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 

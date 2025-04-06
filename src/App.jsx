@@ -1,6 +1,5 @@
 import './App.css'
 import {useEffect, useRef, useState} from "react";
-import Nav from "./Components/Nav.jsx";
 import AboutSection from "./Components/AboutSection.jsx";
 import HomeSection from "./Components/HomeSection.jsx";
 import SkillsSection from "./Components/SkillsSection.jsx";
@@ -16,7 +15,6 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
 function App() {
 
     const aboutRef = useRef(null);
-    const bgRef = useRef(null);
     const skillsRef = useRef(null);
 
     const [width, setWidth] = useState(window.innerWidth);
@@ -39,7 +37,6 @@ function App() {
                 end: "center top",
                 scrub: 1,
                 pin: true,
-                // markers: true,
             },
         });
         gsap.to(aboutRef.current, {
@@ -49,7 +46,6 @@ function App() {
                 start: "5% center",
                 end: "center center",
                 scrub: 1,
-                // markers: true
             },
         });
 
@@ -117,7 +113,6 @@ function App() {
                 end: "95% bottom",
                 scrub: 1,
                 pin: true,
-                // markers: true,
             },
         });
 
@@ -134,10 +129,9 @@ function App() {
         <>
             <div
                 className="w-full h-auto flex flex-col items-center relative">
-                {/*<Nav/>*/}
                 <div
                     className="w-full h-full flex flex-col items-center bg-gradient-5-colors relative gsap_con overflow-hidden">
-                    <div ref={bgRef} className="w-1/2 h-screen absolute top-0 right-0 bg-[#111]"></div>
+                    <div className="w-1/2 h-screen absolute top-0 right-0 bg-[#111]"></div>
                     <HomeTitle/>
                     <HomeSection/>
                     <div ref={aboutRef} className="w-full h-screen absolute top-0">

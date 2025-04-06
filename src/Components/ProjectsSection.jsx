@@ -1,6 +1,5 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import {gsap} from "gsap";
-import {useGSAP} from "@gsap/react";
 import {ScrollTrigger} from "gsap/ScrollTrigger";
 import Carousel from "./ui/Carousel.jsx";
 
@@ -13,7 +12,6 @@ const ProjectsSection = () => {
             <div className="w-full h-full px-[5%] md:px-[20%] lg:px-[10%] flex flex-col">
                 <div className="w-full h-full flex flex-col md:pb-5">
                     <div className="w-full flex justify-center pb-5 pt-10 relative">
-                        {/*<h1 className="text-[clamp(60px,calc(5vw+1rem),100px)] text-gray-300 text-shadow font-bold font-bold font-(family-name:--font-secondary) uppercase">Projects</h1>*/}
                         <h1 className="text-[clamp(50px,calc(4vw+1rem),100px)] font-extrabold text-gray-200 text-shadow tracking-widest font-(family-name:--font-fourth) uppercase">Projects</h1>
                     </div>
                     <Carousel/>

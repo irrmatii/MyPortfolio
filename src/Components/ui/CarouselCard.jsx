@@ -62,15 +62,14 @@ const CarouselCard = ({project, screen}) => {
                           </a>
                       }
                   </div>
-
                     {screen <= 580 &&
                         <div className="w-[50%] h-full pl-2 relative flex items-end overflow-hidden">
                             <img src={project.imageSm === "" ? project.image : project.imageSm} alt=""
                                  className="w-[100%] h-[95%] object-cover rounded-bl-lg rounded-tl-lg object-left box-shadow hover:translate-y-6 hover:translate-x-2 hover:-rotate-2 transition-all duration-300"/>
                         </div>
                     }
-
                 </div>
+
             </div>
             {screen > 580 &&
                 <div className="w-[40%] pl-2 relative flex items-center overflow-hidden">
@@ -78,7 +77,6 @@ const CarouselCard = ({project, screen}) => {
                          className="w-[100%] h-[90%] object-cover rounded-bl-lg rounded-tl-lg object-left box-shadow hover:translate-y-6 hover:translate-x-2 hover:-rotate-2 transition-all duration-300"/>
                 </div>
             }
-
         </div>
     );
 };

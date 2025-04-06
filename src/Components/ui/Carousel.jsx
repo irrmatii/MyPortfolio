@@ -125,7 +125,7 @@ const Carousel = () => {
                         key={i}
                         variants={imageVariants}
                         initial="center"
-                        animate={positions[positionIndex[i]]} // Corrected reference
+                        animate={positions[positionIndex[i]]}
                         transition={{duration: 0.5}}
                         style={{height: '100%', position: "absolute"}}
                         className="w-full lg:w-[60%]"
@@ -156,7 +156,6 @@ const Carousel = () => {
                 </svg>
             </div>
         </>
-
     );
 };
 
