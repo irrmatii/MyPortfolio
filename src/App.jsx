@@ -1,5 +1,5 @@
 import './App.css'
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import Nav from "./Components/Nav.jsx";
 import AboutSection from "./Components/AboutSection.jsx";
 import HomeSection from "./Components/HomeSection.jsx";
@@ -18,6 +18,15 @@ function App() {
     const aboutRef = useRef(null);
     const bgRef = useRef(null);
     const skillsRef = useRef(null);
+
+    const [width, setWidth] = useState(window.innerWidth);
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth);
+        window.addEventListener('resize', handleResize);
+        console.log(width)
+        return () => window.removeEventListener('resize', handleResize);
+    }, [width]);
 
     useGSAP(() => {
         gsap.from(".about-section", {
@@ -44,17 +53,36 @@ function App() {
             },
         });
 
+        if (width < "768"){
+            gsap.to(".letter-I", {
+                color: "transparent",
+                backgroundImage: "linear-gradient(120deg, #afd9f5, #aaa3c0, #fffec1)",
+                backgroundClip: "text",
+                stagger: {
+                    each: 0.3,
+                    from: "end",
+                },
+                scrollTrigger: {
+                    trigger: aboutRef.current,
+                    start: "bottom 95%",
+                    end: "70% 45%",
+                    scrub: 2,
+                    markers:true
+                },
+            });
+        }
+
         gsap.to(".name", {
             color: "white",
             opacity: 0.9,
             stagger: {
-                each: 2,
+                each: 0.3,
                 from: "end",
             },
             scrollTrigger: {
                 trigger: aboutRef.current,
-                start: "75% center",
-                end: "85% center",
+                start: width > "768" ? "75% center" : "bottom bottom",
+                end: width > "768" ? "85% center" : "55% center",
                 scrub: 2,
             },
         });
@@ -62,13 +90,13 @@ function App() {
             color: "white",
             opacity: 0.9,
             stagger: {
-                each: 1,
+                each: 0.3,
                 from: "end",
             },
             scrollTrigger: {
                 trigger: aboutRef.current,
-                start: "75% center",
-                end: "85% center",
+                start: width > "768" ? "75% center" : "bottom bottom",
+                end: width > "768" ? "85% center" : "55% center",
                 scrub: 2,
             },
         });
@@ -121,9 +149,9 @@ function App() {
                     </div>
                     <ContactSection/>
                 </div>
-                <div id="Contact" className="w-full h-screen space"></div>
+                <div className="w-full h-screen space"></div>
             </div>
-
+            <div className="h-[25vh]" id="Contact"></div>
         </>
 
     )

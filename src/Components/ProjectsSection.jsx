@@ -9,12 +9,12 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjectsSection = () => {
 
     return (
-        <div id='Projects' className="w-full h-screen flex projects-section absolute top-0 left-0 opacity-0 z-40">
-            <div className="w-full h-full mr-[10%] ml-[10%] flex flex-col">
-                <div className="w-full h-full flex flex-col pb-10">
-                    <div className="w-full flex justify-center pb-10 pt-5 relative">
-                        <h1 className="text-[clamp(60px,calc(6vw+1rem),100px)] text-[rgb(227,172,133)] text-shadow font-(family-name:--font-primary)">Projects</h1>
-                        <h1 className="text-[clamp(50px,calc(2vw+1rem),100px)] font-extrabold text-shadow-white tracking-widest absolute bottom-11 z-40 font-(family-name:--font-secondary)">Projects</h1>
+        <div id='Projects' className="w-full h-[100dvh] flex projects-section absolute top-0 left-0 opacity-0 z-40">
+            <div className="w-full h-full px-[5%] md:px-[20%] lg:px-[10%] flex flex-col">
+                <div className="w-full h-full flex flex-col md:pb-5">
+                    <div className="w-full flex justify-center pb-5 pt-10 relative">
+                        {/*<h1 className="text-[clamp(60px,calc(5vw+1rem),100px)] text-gray-300 text-shadow font-bold font-bold font-(family-name:--font-secondary) uppercase">Projects</h1>*/}
+                        <h1 className="text-[clamp(50px,calc(4vw+1rem),100px)] font-extrabold text-gray-200 text-shadow tracking-widest font-(family-name:--font-fourth) uppercase">Projects</h1>
                     </div>
                     <Carousel/>
                 </div>

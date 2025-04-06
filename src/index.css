@@ -15,6 +15,10 @@ html, body {
     --font-fourth: "Varela Round", sans-serif;
 }
 
+.hideScrollContainer::-webkit-scrollbar {
+    display: none;
+}
+
 .bg-gradient-5-colors{
     background:linear-gradient(160deg, #afd9f5 2%, #aaa3c0 20%, #fffec1 40%, #aaa3c0 60%, #afd9f5 80%, #fffec1 100%);
     background-size: 120% 120%;
@@ -74,7 +78,7 @@ html, body {
 
 .test{
     color: rgba(255, 255, 255, 0.12);
-    background-color: #232323;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 @property --angle {

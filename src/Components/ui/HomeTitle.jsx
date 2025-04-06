@@ -4,7 +4,7 @@ const HomeTitle = () => {
         <div className="absolute w-full top-[5%] md:top-[4%] lg:top-[2%] flex flex-col md:flex-row items-center md:items-end gap-2 w-full z-20">
             <div className="flex justify-center md:justify-end items-center w-1/2 ">
                 <div className="h-[50%] w-auto relative flex justify-end z-20">
-                    <h1 className="text-[clamp(150px,calc(30vw+1rem),700px)] leading-none font-(family-name:--font-third) text-shadow">I</h1>
+                    <h1 className="text-[clamp(150px,calc(30vw+1rem),700px)] leading-none font-(family-name:--font-third) text-shadow letter-I">I</h1>
                 </div>
                 <div className="h-full flex flex-col justify-end items-center pb-[4%]">
                     <div className="flex leading-none">

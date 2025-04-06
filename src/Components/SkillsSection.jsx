@@ -2,12 +2,11 @@ import React from 'react';
 
 const SkillsSection = () => {
     return (
-        <div id="Skills" className="w-full h-screen flex skills-section z-50 absolute top-0">
+        <div id="Skills" className="w-full h-[100dvh] flex skills-section z-50 absolute top-0">
             <div className="w-full h-full mx-[10%]">
                 <div className="w-full h-full flex flex-col">
-                    <div className="w-full flex justify-center md:pb-30 pt-5 relative">
-                        <h1 className="text-[clamp(60px,calc(6vw+1rem),100px)] text-[#aaa3c0] text-shadow font-(family-name:--font-primary)">Skills</h1>
-                        <h1 className="text-[clamp(50px,calc(2vw+1rem),100px)] font-extrabold text-shadow-white tracking-widest absolute bottom-0 md:bottom-31 z-40 font-(family-name:--font-secondary)">Skills</h1>
+                    <div className="w-full flex justify-center md:pb-25 pt-10 relative">
+                        <h1 className="text-[clamp(50px,calc(4vw+1rem),100px)] font-extrabold text-gray-200 text-shadow tracking-widest font-(family-name:--font-fourth) uppercase">Skills</h1>
                     </div>
 
                     <div className="w-full h-full flex flex-wrap items-center justify-center md:gap-8 pb-30">

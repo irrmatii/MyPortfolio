@@ -31,9 +31,7 @@ const HomeSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-[80vh]'></div>
-            {/*<div className="w-full h-[450px] md:h-[350px] lg:h-[400px] xl:h-[300px]"></div>*/}
-
+            <div className='w-full h-[80vh] spacer'></div>
         </div>
     );
 };
