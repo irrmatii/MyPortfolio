@@ -52,8 +52,19 @@ function App() {
         if (width < "768"){
             gsap.to(".letter-I", {
                 color: "transparent",
-                backgroundImage: "linear-gradient(120deg, #afd9f5, #aaa3c0, #fffec1)",
+                backgroundImage: "linear-gradient(190deg, #afd9f5, #aaa3c0, #fffec1)",
                 backgroundClip: "text",
+                scrollTrigger: {
+                    trigger: aboutRef.current,
+                    start: "bottom 95%",
+                    end: "70% 45%",
+                    scrub: 2,
+                },
+            });
+
+            gsap.to(".surname", {
+                color: "white",
+                opacity: 0.9,
                 stagger: {
                     each: 0.3,
                     from: "end",
@@ -63,39 +74,43 @@ function App() {
                     start: "bottom 95%",
                     end: "70% 45%",
                     scrub: 2,
-                    markers:true
                 },
             });
-        }
 
-        gsap.to(".name", {
-            color: "white",
-            opacity: 0.9,
-            stagger: {
-                each: 0.3,
-                from: "end",
-            },
-            scrollTrigger: {
-                trigger: aboutRef.current,
-                start: width > "768" ? "75% center" : "bottom bottom",
-                end: width > "768" ? "85% center" : "55% center",
-                scrub: 2,
-            },
-        });
-        gsap.to(".word-am", {
-            color: "white",
-            opacity: 0.9,
-            stagger: {
-                each: 0.3,
-                from: "end",
-            },
-            scrollTrigger: {
-                trigger: aboutRef.current,
-                start: width > "768" ? "75% center" : "bottom bottom",
-                end: width > "768" ? "85% center" : "55% center",
-                scrub: 2,
-            },
-        });
+
+        } else {
+            gsap.to(".name", {
+                color: "white",
+                opacity: 0.9,
+                stagger: {
+                    each: 0.3,
+                    from: "end",
+                },
+                scrollTrigger: {
+                    trigger: aboutRef.current,
+                    start: width > "768" ? "75% center" : "bottom bottom",
+                    end: width > "768" ? "85% center" : "55% center",
+                    scrub: 2,
+                },
+            });
+            gsap.to(".word-am", {
+                color: "white",
+                opacity: 0.9,
+                stagger: {
+                    each: 0.3,
+                    from: "end",
+                },
+                scrollTrigger: {
+                    trigger: aboutRef.current,
+                    start: width > "768" ? "75% center" : "bottom bottom",
+                    end: width > "768" ? "85% center" : "55% center",
+                    scrub: 2,
+                },
+            });
+        };
+
+
+
         gsap.to(".title", {
             opacity: 0,
             scrollTrigger: {
