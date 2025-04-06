@@ -38,7 +38,7 @@ const ContactSection = () => {
 
                     <button
                         type="submit"
-                        className="w-[90%] border border-white bg-black text-white font-bold text-[clamp(15px,1.3vw,40px)] px-6 py-2 rounded-lg hover:bg-white hover:text-black transition-all duration-300"
+                        className="w-[90%] border border-white bg-black text-white font-bold text-[clamp(15px,1.3vw,40px)] px-6 py-2 rounded-lg hover:bg-white hover:text-black hover:border-black transition-all ease-in-out duration-400"
                     >
                         Send Message
                     </button>

@@ -28,9 +28,7 @@ const AboutSection = () => {
                     className="w-full h-auto pt-5 md:pt-20 pb-20 max-h-[250px] md:max-h-[350px] lg:max-h-[380px] xl:max-h-[500px] flex">
                     <div className="w-[60%] h-full flex flex-col items-center justify-around gap-3 text-center text-3xl pl-5 pr-5 z-20">
                         <div className='w-[90%] flex items-center justify-center'>
-                            <p className="text-[clamp(15px,calc(1.1vw+1rem),100px)] text-white text-shadow-white font-(family-name:--font-primary) uppercase tracking-wide">I’m
-                                here
-                                to craft engaging digital experiences and bring ideas to life.</p>
+                            <p className="text-[clamp(15px,calc(1.1vw+1rem),100px)] text-white text-shadow-white font-(family-name:--font-primary) uppercase tracking-wide">If you’re looking for a passionate frontend developer to bring your ideas to life, let’s connect!</p>
                         </div>
                         <div className='w-full h-auto flex justify-center gap-3'>
                             <a href="#Contact" className='w-[8%] h-auto'>
