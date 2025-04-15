@@ -21,14 +21,12 @@ const Carousel = () => {
     useEffect(() => {
         const handleResize = () => setWidth(window.innerWidth);
         window.addEventListener('resize', handleResize);
-        console.log(width)
         return () => window.removeEventListener('resize', handleResize);
     }, [width]);
 
     function Next(){
         setPositionIndex((prevIndexes) => {
             const updateIndex = prevIndexes.map((prevIndex) => (prevIndex + 1) % 5)
-            console.log("clicked")
             return updateIndex;
         })
     }
@@ -36,7 +34,6 @@ const Carousel = () => {
     function Back(){
         setPositionIndex((prevIndexes) => {
             const updateIndex = prevIndexes.map((prevIndex) => (prevIndex - 1 +5) % 5)
-            console.log("clicked")
             return updateIndex;
         })
     }

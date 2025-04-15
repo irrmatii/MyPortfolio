@@ -55,11 +55,10 @@ const AboutSection = () => {
                     </div>
                     <div className="w-[40%] h-full flex justify-center items-center relative">
                         <div
-                            className='w-[90%] aspect-square rounded-full bg-radial from-[#afd9f5] to-[#111] to-[71%]  overflow-hidden flex justify-center'>
-                            <img className="h-full object-center" src={profileImg}
+                            className='w-[90%] aspect-square rounded-full bg-radial from-[#afd9f5] to-[#111] to-[71%] overflow-hidden flex justify-center'>
+                            <img className="h-full object-cente" src={profileImg}
                                  alt=""/>
                         </div>
-
                     </div>
                 </div>
             </div>
